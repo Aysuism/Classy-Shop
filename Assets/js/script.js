@@ -97,7 +97,6 @@ const changeData = () => {
     }
 }
 
-
 //-----------------------------Dark Light Mode--------------
 
 const button=document.querySelector('.darkmode')
@@ -143,3 +142,16 @@ if (localStorage.getItem('language') === 'Az') {
 changeData();
 
 btn.onclick = changeData;
+
+//--------------------------Slick Carousel--------------------
+
+const slickside =document.querySelectorAll('.slick')
+
+slickside.forEach(slide=>{
+    slide.onmouseover=()=>{
+        slide.classList.add('animate__animated', 'animate__swing')
+    }
+    slide.onmouseout=()=>{
+        slide.classList.remove('animate__animated', 'animate__swing')
+    }
+})

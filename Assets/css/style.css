@@ -569,6 +569,68 @@ main {
             }
         }
     }
+
+    .brand-logos{
+        .slick-carousel{
+            .slick{
+               img{
+                cursor: pointer;
+               }
+            }
+        }
+        .slick-next {
+            background-color: #FF5252;
+            border-radius: 50%;
+            right: 25px;
+        }
+        
+        .slick-prev {
+            background-color: red;
+            border-radius: 50%;
+            left: 25px;
+        }
+    }
+    
+    .authors{
+        .slick-carousel-2{
+            .slick-next {
+                background-color: #FF5252;
+                border-radius: 50%;
+                right: 25px;
+            }
+            
+            .slick-prev {
+                background-color: red;
+                border-radius: 50%;
+                left: 25px;
+            }
+            .card{
+                width: 90%;
+                height: 260px;
+                padding: 15px;
+                .profil{
+                    display: flex;
+                    img{
+                        object-fit: contain;
+                    }
+                    .text{
+                        padding-left: 30px;
+                        h3{
+                            font-size: 18px;
+                        }
+                        p{
+                            padding: 0;
+                        }
+                    }
+                }
+                p{
+                    padding-top: 15px;
+                    font-size: 16px;
+                    color: gray;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width:1200px) {
